@@ -1,4 +1,4 @@
-package com.example.android.kotlinfirsttest
+package com.example.android.kotlinfirsttest.adapters
 
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
