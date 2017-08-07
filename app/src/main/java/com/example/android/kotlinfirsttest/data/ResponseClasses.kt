@@ -3,6 +3,9 @@ package com.example.android.kotlinfirsttest.data
 /**
  * Created by Dawid on 2017-08-07.
  */
+
+/*data class provide getters, setters, hash, toString...*/
+
 data class ForecastResult(val city: City, val list: List<Forecast>)
 
 data class City(val id: Long, val name: String, val coord: Coordinates, val country: String,
