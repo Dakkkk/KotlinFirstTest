@@ -1,4 +1,4 @@
-package com.example.android.kotlinfirsttest.activities
+package com.example.android.kotlinfirsttest.ui.activities
 
 
 import android.support.v7.app.AppCompatActivity
