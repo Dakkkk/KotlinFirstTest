@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import com.example.android.kotlinfirsttest.adapters.ForecastListAdapter
 import com.example.android.kotlinfirsttest.R
+import org.jetbrains.anko.find
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,7 +24,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val forecastList = findViewById(R.id.forecast_list) as RecyclerView
+        /* using Kotlins ANKO find extension function */
+        val forecastList: RecyclerView = find(R.id.forecast_list)
+        //val forecastList = findViewById(R.id.forecast_list) as RecyclerView
         forecastList.layoutManager = LinearLayoutManager(this)
         forecastList.adapter = ForecastListAdapter(items)
 
