@@ -8,7 +8,7 @@ data class ForecastList(val city: String, val country: String,
     val size: Int
         get() = dailyForecast.size
 
-    /*We use operator modifier to overload the get function, so we can get the dailyForecast[position mokre easily]*/
+    /*We use operator modifier to overload the get function, so we can get the dailyForecast[position] of type ForecastList more easily]*/
     operator fun get(position: Int): Forecast = dailyForecast[position]
 }
 
