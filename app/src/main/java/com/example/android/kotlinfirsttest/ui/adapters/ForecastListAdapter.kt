@@ -29,7 +29,7 @@ class ForecastListAdapter(val weekForecast: ForecastList) : RecyclerView.Adapter
         }
     }
 
-    override fun getItemCount(): Int = weekForecast.dailyForecast.size
+    override fun getItemCount(): Int = weekForecast.size
 
     class ViewHolder(val textView: TextView) : RecyclerView.ViewHolder(textView)
 }
