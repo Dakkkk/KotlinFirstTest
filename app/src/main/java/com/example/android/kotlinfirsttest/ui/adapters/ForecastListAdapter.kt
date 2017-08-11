@@ -16,6 +16,8 @@ import org.jetbrains.anko.find
 /**
  * Created by Dawid on 2017-08-05.
  */
+
+/*RecyclerView adapter*/
 class ForecastListAdapter(val weekForecast: ForecastList,
                           val itemClick: ForecastListAdapter.OnItemClickListener) :
         RecyclerView.Adapter<ForecastListAdapter.ViewHolder>()  {

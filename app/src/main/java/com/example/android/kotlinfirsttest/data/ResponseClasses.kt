@@ -5,6 +5,7 @@ package com.example.android.kotlinfirsttest.data
  */
 
 /*data class provide getters, setters, hash, toString...*/
+/*This file contains all response classes needed by the app*/
 
 data class ForecastResult(val city: City, val list: List<Forecast>)
 

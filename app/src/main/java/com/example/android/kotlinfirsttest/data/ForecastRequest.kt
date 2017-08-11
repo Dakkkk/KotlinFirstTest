@@ -18,7 +18,9 @@ class ForecastRequest(val zipCode: String) {
     }
 
     fun execute(): ForecastResult {
+        /*readText() Gets the entire content of this file as a String, not recommended for huge files (< 2 GB)*/
         val forecastJsonStr = URL(COMPLETE_URL + zipCode).readText()
+        /*Convert JSON to JAVA object*/
         return Gson().fromJson(forecastJsonStr, ForecastResult::class.java)
     }
 }

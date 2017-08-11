@@ -11,6 +11,7 @@ import com.example.android.kotlinfirsttest.domain.model.Forecast as ModelForecas
 /**
  * Created by Dawid on 2017-08-07.
  */
+/*Class provides all necessary functions to convert the given response data into a needed format*/
 class ForecastDataMapper {
 
     fun convertFromDataModel(forecast: ForecastResult): ForecastList {
